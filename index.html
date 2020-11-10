@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174921341-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-174921341-1');
+	</script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Corruption Over Cut and Mix: A Novel Data Augmentation for Out-Of-Distribution Detection">
+    <meta name="author" content="Ramya Hebbalaguppe">
+
+    <title>Corruption Over Cut and Mix: A Novel Data Augmentation for Out-Of-Distribution Detection</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+    <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+</head>
+
+<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <h2>Corruption Over Cut and Mix: A Novel Data Augmentation for Out-Of-Distribution Detection</h2>
+    <hr>
+    <p class="authors">
+        <a href="https://scholar.google.co.in/citations?user=IJjnjZIAAAAJ&hl=en"> Ramya Hebbalaguppe</a></br>
+    </p>
+<!--     <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="PoseFromGraph.pdf">Paper</a>
+        <a class="btn btn-primary" href="PoseFromGraph-supplementary.pdf">Supplementary Material</a>
+    </div>
+ --></div>
+
+<div class="container">
+
+    <div class="section">
+<!--         <div class="vcontainer">
+			<iframe class='video' src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+ -->        <hr>
+        <p> Machine learning systems can often be made to generalize well when test data distribution resembles training data distribution. However, the modern Deep Neural Networks (DNNs) are vulnerable in real world settings at test time, when the input may be Out-Of-Distribution (OOD) with respect to the samples from in-distribution (ID) training set. It has been observed that rather than rejecting such inputs, the DNNs incorrectly, and often catastrophically, predict these inputs as one of the known classes with very high confidence. One of the ways to improve the reliability of DNNs in such a situation is to show a vast variety of OOD samples at train time through data augmentation, and allow a network to learn the OOD/reject class. However, we observe that the current data augmentation methods often use samples corrupted with random noise or adversarial perturbation to generate samples of reject class. These reject samples lie very close to and sometimes inside ID manifold, and do not allow a network to learn samples far enough from ID manifold effectively. We propose a new OOD sample generation technique, called CorruptionOverCutMix (CnC), which we demonstrate can generate sample points both near and far from the training distribution improving the decision boundary thickness. We show that training with these samples leads to significant improvement over the state of the art techniques in terms of a network's ability to successfully detect OOD samples. For example, when we consider CIFAR100 as ID dataset, our method yields TNR@TPR95 of 99.3, AUROC of 99.8, and Detection Error of 1.7 averaged over OOD benchmark datasets. </p>
+    </div>
+
+    <div class="section">
+        <h2>Paper</h2>
+        <hr>
+        <div>
+            <div class="list-group">
+            	<center> Coming soon! </center>
+<!--                 <a href="PoseFromGraph.pdf"
+                   class="list-group-item">
+                    <img src="images/paper_thumbnail.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
+                </a>
+ -->            </div>
+        </div>
+    </div>
+
+    <hr>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
